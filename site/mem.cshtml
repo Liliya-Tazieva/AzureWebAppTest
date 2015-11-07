@@ -1,16 +1,16 @@
-﻿@{
+@{
 	var amplitudeRequest = Request.Params["amplitude"];
 	var amplitudeValue = 1;
 	var clear = int.TryParse(amplitudeRequest, out amplitudeValue);
-	var errorMssage = "no amplitude provided, please input http://apmath4oj.azurewebsites.net/mem.cshtml?amplitude=5";
+	var errorMssage = "no amplitude provided, please input http://apmath4oj.azurewebsites.net/mem.cshtml?amplitude=666";
 }
 <html>
 <head>
   <meta charset="utf-8">
-  <script src="https://raw.githubusercontent.com/unconed/mathbox/master/build/mathbox-bundle.min.js"></script>
-  <title>MathBox Test</title>
+  <script src="http://acko.net/files/mathbox2/mathbox-bundle.min.js"></script>
+  <title>MathBox Sandbox</title>
 </head>
-<body>
+<body></body>
 <script type="text/javascript">
 
 @if(!clear){
@@ -73,5 +73,4 @@
     surface = mathbox.select('surface')
 
 </script>
-</body>
 </html>
