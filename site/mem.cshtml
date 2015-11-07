@@ -1,7 +1,7 @@
 @{
 	var amplitudeRequest = Request.Params["amplitude"];
 	var amplitudeValue = 1;
-	var error = int.TryParse(amplitudeRequest, out amplitudeValue);
+	var clear = int.TryParse(amplitudeRequest, out amplitudeValue);
 	var errorMssage = "no amplitude provided, please input http://apmath4oj.azurewebsites.net/mem.cshtml?amplitude=666";
 }
 <html>
@@ -13,7 +13,7 @@
 <body></body>
 <script type="text/javascript">
 
-if(@error){
+@if(!clear){
 	alert("@errorMssage");
 }
 
