@@ -12,11 +12,10 @@
 </head>
 <body></body>
 <script type="text/javascript">
-@{
-	if(error){
-		alert("@errorMssage");
-	}
-} 
+
+if(@error){
+	alert("@errorMssage");
+}
 
  mathbox = mathBox({
       plugins: ['core', 'controls', 'cursor'],
